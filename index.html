@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index1.css">
+    <title>Cool Wallet</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">创建 ETH、BSC 靓号钱包地址</div>
+        <div class="row">
+            <div>开头：<input id="head" class="input" type="text" value="888" /></div>
+            <div>尾号：<input id="tail" class="input" type="text" value="" /></div>
+        </div>
+        <div class="create" onclick="createWallet()">创建钱包</div>
+        <div class="result">
+            <div id="loading"></div>
+            <div>地址：</div>
+            <div class="address"></div>
+            <div>私钥：</div>
+            <div class="privateKey"></div>
+        </div>
+        <div class="git"><a href="https://wwqhy.github.io/CoolWallet/" target="blank">源码仓库</a></div>
+    </div>
+</body>
+
+</html>
